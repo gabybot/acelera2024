@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import aceleraLogoT from '/../static/aceleraLogoT.png'
+import aceleraLogoT from '/aceleraLogoT.png'
 
 export default function Header() {
     return (
