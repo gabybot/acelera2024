@@ -1,7 +1,20 @@
-export default function Home() {
+// app/page.tsx
+import Hero from './Components/Hero';
+import Services from './Components/Services';
+import ContactForm from './Components/ContactForm';
+import HowItWorks from './Components/HowItWorks';
+import CallToAction from './Components/CallToAction';
+import Advantages from './Components/Advantages';
+
+export default function HomePage() {
   return (
-    <div className="bg-white text-black dark:bg-black dark:text-white min-h-screen flex items-center justify-center">
-      <h1 className="text-3xl font-bold">Welcome to Acelera</h1>
-    </div>
+    <>
+      <Hero />
+      <Services />
+      <HowItWorks />
+      <Advantages />
+      <ContactForm />
+      <CallToAction />
+    </>
   );
 }
