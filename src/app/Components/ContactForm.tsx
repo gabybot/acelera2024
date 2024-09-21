@@ -13,8 +13,32 @@ export default function ContactForm() {
   const { register, handleSubmit, formState: { errors }, reset } = useForm<ContactFormData>();
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const onSubmit = (data: ContactFormData) => {
+  const onSubmit = async (data: ContactFormData) => {
     console.log('Formulario enviado con éxito:', data);
+
+    // URL del endpoint HTTP de Logic App
+    const logicAppEndpoint = "https://prod-20.brazilsouth.logic.azure.com:443/workflows/b8ca1c54259841169f3b32cc8c20e18f/triggers/When_a_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_a_HTTP_request_is_received%2Frun&sv=1.0&sig=NI5KRzP88CdsMT12Al9dFeiYavfoEMPQHjBSS4e3ino";
+
+    try {
+      // Hacer una solicitud POST para enviar los datos del formulario a Logic App
+      const response = await fetch(logicAppEndpoint, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data), // Enviar los datos del formulario en formato JSON
+      });
+
+      if (response.ok) {
+        console.log("Datos enviados a Logic App correctamente");
+      } else {
+        console.error("Error al enviar datos a Logic App");
+      }
+    } catch (error) {
+      console.error("Error en la solicitud:", error);
+    }
+
+    // Mostrar mensaje de éxito y resetear el formulario
     setIsSubmitted(true);
     reset(); // Limpiar los campos después del envío
     setTimeout(() => {

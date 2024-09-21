@@ -35,8 +35,11 @@ export default function Hero() {
             Acelera tu presencia online con un diseño profesional.
           </p>
           <a 
-            href="#contacto" 
-            className="bg-amarilloMostaza hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded transition-transform transform hover:scale-110 focus:scale-110 focus:ring-4 focus:ring-yellow-300 animate-pulse">
+            href="https://wa.me/YOUR_PHONE_NUMBER?text=Hola,%20me%20gustaría%20más%20información%20sobre%20Acelera" 
+            className="bg-amarilloMostaza hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded transition-transform transform hover:scale-110 focus:scale-110 focus:ring-4 focus:ring-yellow-300 animate-pulse"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Contáctanos ahora
           </a>
         </div>
