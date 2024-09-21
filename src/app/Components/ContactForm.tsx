@@ -16,17 +16,15 @@ export default function ContactForm() {
   const onSubmit = async (data: ContactFormData) => {
     console.log('Formulario enviado con éxito:', data);
 
-    // URL del endpoint HTTP de Logic App
     const logicAppEndpoint = "https://prod-20.brazilsouth.logic.azure.com:443/workflows/b8ca1c54259841169f3b32cc8c20e18f/triggers/When_a_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_a_HTTP_request_is_received%2Frun&sv=1.0&sig=NI5KRzP88CdsMT12Al9dFeiYavfoEMPQHjBSS4e3ino";
 
     try {
-      // Hacer una solicitud POST para enviar los datos del formulario a Logic App
       const response = await fetch(logicAppEndpoint, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(data), // Enviar los datos del formulario en formato JSON
+        body: JSON.stringify(data),
       });
 
       if (response.ok) {
@@ -38,11 +36,10 @@ export default function ContactForm() {
       console.error("Error en la solicitud:", error);
     }
 
-    // Mostrar mensaje de éxito y resetear el formulario
     setIsSubmitted(true);
-    reset(); // Limpiar los campos después del envío
+    reset(); 
     setTimeout(() => {
-      setIsSubmitted(false); // Ocultar el mensaje después de 3 segundos
+      setIsSubmitted(false); 
     }, 3000);
   };
 
@@ -110,6 +107,16 @@ export default function ContactForm() {
             Enviar Mensaje
           </button>
         </form>
+
+        {/* Botón de WhatsApp */}
+        <a
+          href="https://wa.me/1234567890" 
+          className="mt-8 inline-block bg-green-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-300 ease-in-out"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Escríbenos al WhatsApp
+        </a>
       </div>
     </section>
   );

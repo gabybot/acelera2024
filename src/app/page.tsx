@@ -36,11 +36,11 @@ export default function HomePage() {
 
       {/* Botón flotante de WhatsApp rectangular */}
       <a 
-        href="https://wa.me/YOUR_PHONE_NUMBER?text=Hola,%20me%20gustaría%20más%20información%20sobre%20Acelera"
+        href="https://wa.me/+56974777677?text=Hola,%20me%20gustaría%20más%20información%20sobre%20Acelera"
         className="fixed bottom-5 right-5 bg-green-500 px-6 py-3 rounded-lg shadow-lg text-white flex items-center hover:bg-green-600 transition duration-300"
         target="_blank"
         rel="noopener noreferrer"
-        style={{ fontSize: '20px', fontWeight: 'bold' }} // Texto más grande y negrita
+        style={{ fontSize: '20px', fontWeight: 'bold' }} 
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
