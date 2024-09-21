@@ -15,7 +15,6 @@ export default function Header() {
             layout="intrinsic"
             className="m-0 p-0"
           />
-          <span className="ml-2 text-2xl font-bold">Acelera</span>
         </a>
         
         {/* Navigation */}
