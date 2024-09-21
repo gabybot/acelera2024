@@ -20,9 +20,6 @@ export default function HowItWorks() {
               <p className="text-gray-600">
                 Hablamos contigo para conocer tu negocio y definir qué es lo que necesitas en tu landing page.
               </p>
-              <div className="mt-4">
-                <span className="text-turquesa font-semibold">Descubre más →</span>
-              </div>
             </div>
   
             {/* Paso 2 */}
@@ -34,9 +31,6 @@ export default function HowItWorks() {
               <p className="text-gray-600">
                 Diseñamos y desarrollamos tu landing page, alineada a los objetivos que discutimos inicialmente.
               </p>
-              <div className="mt-4">
-                <span className="text-turquesa font-semibold">Descubre más →</span>
-              </div>
             </div>
   
             {/* Paso 3 */}
@@ -48,9 +42,6 @@ export default function HowItWorks() {
               <p className="text-gray-600">
                 Revisamos contigo la landing page, hacemos los ajustes finales y la lanzamos para que empieces a captar clientes.
               </p>
-              <div className="mt-4">
-                <span className="text-turquesa font-semibold">Descubre más →</span>
-              </div>
             </div>
           </div>
         </div>
