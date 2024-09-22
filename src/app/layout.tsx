@@ -6,7 +6,7 @@ import '../../styles/tailwind.css';
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="es" className="h-full">
+    <html lang="es" className="h-full m-0 p-0">
       <Head>
         {/* Meta básicos */}
         <meta charSet="UTF-8" />
@@ -35,11 +35,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <meta property="og:type" content="website" />
       </Head>
 
-      <body className="h-full bg-white text-black dark:bg-black dark:text-white transition-colors duration-300">
-        <div className="min-h-full flex flex-col">
+      <body className="h-full bg-white text-black dark:bg-black dark:text-white transition-colors duration-300 m-0 p-0">
+        <div className="min-h-screen flex flex-col m-0 p-0">
           <Header />
-          <main className="flex-grow w-full">
-            <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+          <main className="flex-grow w-full m-0 p-0">
+            <div className="w-full h-full flex-grow m-0 p-0">
               {children}
             </div>
           </main>

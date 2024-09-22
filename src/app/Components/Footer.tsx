@@ -10,18 +10,18 @@ export default function Footer() {
         <div className="flex items-center space-x-4">
         
           <a
-            href="https://wa.me/123456789" // reemplazar con numero de WhatsApp
+            href="https://wa.me/+56974777677" 
             target="_blank"
             rel="noopener noreferrer"
             className="hover:underline"
-          >
+          > 
             <Image 
               src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
               alt="WhatsApp"
               width={24}
               height={24}
               className="inline-block"
-            /> 
+            /> +56974777677
           </a>
           
           <a href="mailto:contacto@acelera.com" className="hover:underline">
