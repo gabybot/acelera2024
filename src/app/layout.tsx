@@ -1,4 +1,3 @@
-// app/layout.tsx
 import { ReactNode } from 'react';
 import Head from 'next/head';
 import Header from './Components/Header';
