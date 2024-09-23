@@ -1,4 +1,4 @@
-# 📄 Landing Page Builder
+# 📄 Acelera Landing Page Builder
 
 Este proyecto es una landing page diseñada para la creación de múltiples páginas de destino, desarrollada con **Next.js** y **Tailwind CSS**, conectada a **Azure** utilizando **AppLogic** para gestionar formularios y el envío de correos de confirmación.
 
