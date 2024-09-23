@@ -1,8 +1,7 @@
 import { lazy, Suspense } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-
-const Hero = lazy(() => import('./Components/Hero'));
+import Hero from './Components/Hero';
 const Services = lazy(() => import('./Components/Services'));
 const ContactForm = lazy(() => import('./Components/ContactForm'));
 const HowItWorks = lazy(() => import('./Components/HowItWorks'));
