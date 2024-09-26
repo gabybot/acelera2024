@@ -4,13 +4,12 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import aceleraAm from '/images/aceleraAM.png'; 
 import aceleraAZ from '/images/aceleraAZ.png'; 
-import aceleraBL from '/images/aceleraBL.png'; 
 import aceleraCE from '/images/aceleraCE.png'; 
 
 export default function Hero() {
   const [currentImage, setCurrentImage] = useState(aceleraAm);
 
-  const images = [aceleraAZ, aceleraBL, aceleraCE, aceleraAm];
+  const images = [aceleraAZ, aceleraCE, aceleraAm];
 
   useEffect(() => {
     const intervalId = setInterval(() => {
