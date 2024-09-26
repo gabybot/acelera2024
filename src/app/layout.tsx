@@ -31,7 +31,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           content="Crea tu landing page personalizada en solo 5 días con Acelera, optimizada para SEO y maximizar conversiones."
         />
         <meta property="og:image" content="/static/acelera.png" />
-        <meta property="og:url" content="https://tupagina.com" />
+        <meta property="og:url" content="https://acelera.life" />
         <meta property="og:type" content="website" />
       </Head>
 

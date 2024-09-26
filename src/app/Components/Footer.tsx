@@ -24,7 +24,7 @@ export default function Footer() {
             /> +56974777677
           </a>
           
-          <a href="mailto:contacto@acelera.com" className="hover:underline">
+          <a href="mailto:contacto@acelera.life" className="hover:underline">
             contacto@acelera.com
           </a>
         </div>
